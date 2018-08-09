@@ -1,0 +1,1 @@
+[{"name":"sql.active_record","payload":{"sql":"SELECT `trades`.* FROM `trades`  WHERE `trades`.`currency` = 3 AND (created_at \u003E= '2018-07-20 19:00:00' AND id \u003C 1)","name":"Trade Load","connection_id":65443200,"binds":[]},"time":"2018-07-24T09:23:26+02:00","transaction_id":"977085d5b64e2cd3b874","end":"2018-07-24T09:23:26+02:00","children":[],"duration":0.826414}]

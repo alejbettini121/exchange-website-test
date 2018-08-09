@@ -1,0 +1,79 @@
+﻿section.home-area
+  .home_content
+    .container
+      .row
+        .col-sm-12
+          h2.sub_title
+            | IMPORTANT: PLEASE READ!
+        .home_list
+          ul
+            li.col-md-3.col-sm-6.col-xs-12
+              .thumbnail
+                = image_tag("f1.png")
+                .caption
+                  h3
+                    a[href="/security"]
+                      | Protecting your investment
+                  p
+                    | Our wallet system uses three keys. One is stored on a trusted 3rd party server. Another is the user’s “hot” key, used in transactions, while the third is a backup key that can be held in any form by the user, say on a USB stick or a paper wallet.
+                  a.btn.btn-link[href="/security" role="button"]
+                    | More
+            li.col-md-3.col-sm-6.col-xs-12
+              .thumbnail
+                = image_tag("t3.png", class: "img-responsive")
+                .caption
+                  h3
+                    a[href="/tos"]
+                      | Terms of Service
+                  p
+                    | The following provisions shall constitute the regulations (hereinafter referred to as: the “Regulations”), within the meaning of Article 8 of the Act of 18 July 2002 on Providing Services by Electronic Means (Journal of Laws of 2017, item 1219, as amended) (hereinafter referred to as: “PSEMA”).
+                  a.btn.btn-link[href="/tos" role="button"]
+                    | More
+            li.col-md-3.col-sm-6.col-xs-12
+              .thumbnail
+                = image_tag("t4.png", class: "img-responsive")
+                .caption
+                  h3
+                    a[href="quand"]
+                      | Q & A
+                  p
+                    | You create an account on our platform, deposit fiat money (EUR, USD etc.) and then place a bid. If your order matches an offer (an offer in trading terms is an “ask”) you are a “taker”, if your bid is below the lowest “ask” you are a “maker”
+                  a.btn.btn-link[href="/quand" role="button"]
+                    | More
+            li.col-md-3.col-sm-6.col-xs-12
+              .thumbnail
+                = image_tag("f2.png", class: "img-responsive")
+                .caption
+                  h3
+                    a[href="/privacy"]
+                      | Privacy Policy
+                  p
+                    | This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security
+                  a.btn.btn-link[href="/privacy" role="button"]
+                    | More
+        .col-sm-9.home_bottom
+          h2.sub_title
+            | WE USE:
+          .clearfix
+          .row
+            #myCarousel.carousel.slide[data-ride="carousel" data-type="multi" data-interval="6000"]
+              .carousel-inner
+                .item.active
+                  .col-md-2.col-sm-6.col-xs-12.p10
+                    = image_tag("l1.png", class: "img-responsive")
+                .item.active
+                  .col-md-2.col-sm-6.col-xs-12
+                    = image_tag("l3.png", class: "img-responsive")
+                .item.active
+                  .col-md-2.col-sm-6.col-xs-12
+                    = image_tag("l4.png", class: "img-responsive")
+                .item.active
+                  .col-md-2.col-sm-6.col-xs-12
+                    = image_tag("l5.png", class: "img-responsive")
+                .item.active
+                  .col-md-2.col-sm-6.col-xs-12
+                    = image_tag("l6.png", class: "img-responsive")
+              a.left.carousel-control[href="#myCarousel" data-slide="prev"]
+                i.glyphicon.glyphicon-chevron-left
+              a.right.carousel-control[href="#myCarousel" data-slide="next"]
+                i.glyphicon.glyphicon-chevron-right

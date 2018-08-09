@@ -1,0 +1,19 @@
+current directory: /home/btc/peatio/updated/vendor/cache/ruby/2.2.0/gems/byebug-10.0.2/ext/byebug
+/usr/local/rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20180726-24894-1g9zb7a.rb extconf.rb
+creating Makefile
+
+current directory: /home/btc/peatio/updated/vendor/cache/ruby/2.2.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/btc/peatio/updated/vendor/cache/ruby/2.2.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling threads.c
+compiling breakpoint.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/btc/peatio/updated/vendor/cache/ruby/2.2.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20180726-24894-19og4dd/byebug

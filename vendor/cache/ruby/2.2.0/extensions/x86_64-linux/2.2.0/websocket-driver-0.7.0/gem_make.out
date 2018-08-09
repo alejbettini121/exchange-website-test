@@ -1,0 +1,15 @@
+current directory: /home/btc/peatio/updated/vendor/cache/ruby/2.2.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+/usr/local/rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20180726-24894-f8qxt6.rb extconf.rb
+creating Makefile
+
+current directory: /home/btc/peatio/updated/vendor/cache/ruby/2.2.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/btc/peatio/updated/vendor/cache/ruby/2.2.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/btc/peatio/updated/vendor/cache/ruby/2.2.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20180726-24894-pthrvj

@@ -1,0 +1,33 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/root/peatio
+    links:
+      - bitcoind
+      - mysql
+    depends_on:
+      - mysql
+    ports:
+      - 3000:3000
+    #command: bash -c "service redis-server start && service rabbitmq-server restart && bundle exec rake db:setup && bundle exec rake daemons:start && bundle exec rails server"
+    command: bash -c "service redis-server start && service rabbitmq-server restart && bundle exec rake daemons:start && bundle exec rails server"
+    stdin_open: true
+    tty: true
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+  bitcoind:
+    image: kylemanna/bitcoind:latest
+    command: btc_oneshot
+    ports:
+      - 8333:8333
+      - 8332:8332
+    volumes:
+      - ./data/bitcoind/db:/data/bitcoind/db
+    logging:
+      driver: none

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mailer</title>
+  <%= stylesheet_link_tag "mails_viewer" %>
+  <%= javascript_include_tag "mails_viewer" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container">
+    <div id="list">
+      <table id="mails" class="datatable">
+        <thead>
+          <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>CC</th>
+            <th>Subject</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @mails.each do |mail, filename| %>
+            <tr class="mail">
+              <td><%= Array.wrap(mail.from).join(', ') %></td>
+              <td><%= Array.wrap(mail.to).join(', ') %></td>
+              <td><%= Array.wrap(mail.cc).join(', ') %></td>
+              <td>
+                <%= mail.subject %>
+              </td>
+              <td><%= mail.date.to_s(:long) %></td>
+              <td>
+                <% if mail.html_part || mail.content_type =~ /html/ %>
+                  <a href="<%= email_path(filename, :html) %>" class="html preview">html</a>
+                <% end %>
+                <% if mail.text_part || mail.content_type =~ /plain/ %>
+                  <a href="<%= email_path(filename, :plain) %>" class="plain preview">plain</a>
+                <% end %>
+
+                <% mail.attachments.each do |attachment| %>
+                  <a href="<%= attachment_path(filename, attachment.filename) %>" class="attachment preview"><%= attachment.filename %></a>
+                <% end %>
+                <a href="<%= email_path(filename, :raw) %>" class="raw">raw</a>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+       <pre id='raw'>
+        <h3>Click link above to view original email content here!</h3>
+        <div></div>
+      </pre>
+
+    </div>
+  </div>
+</body>
+</html>

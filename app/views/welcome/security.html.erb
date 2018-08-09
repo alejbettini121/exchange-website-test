@@ -1,0 +1,72 @@
+   <%= render :partial => "welcome/apheader" %>
+    <main class="site-main">   
+        <section class="home-area">
+            <div class="home_content">
+                <div class="container">      
+                    <hr />
+ 
+                    <h1>AN INTEGRATED SECURITY MODEL</h1>
+                    
+<p class="pmain">When we started thinking about the creation of a new crypto exchange, our main concern was related to the security of the private keys, which were potentially subject to theft even from the Database, let’s say by a disloyal employee. In this context, we found out that the technology to encrypt private keys was already available, which relied on a second authorization to complete a transaction.</p>
+    
+<p class="pmain">Bitcoin’s history is rife with drama about the closure of one exchange after another. Problems have ranged from outsider hacking attacks to insiders holding servers’ hostage.</p>
+
+<p class="pmain">Implementing the multi-signature feature means  key recovery solutions, zero confirm transaction services and other safety and usability protocols that have enabled businesses to use digital currencies plus digital currency usable in a regulated economy, empowering businesses to work with digital currency easily at scale alongside its other currencies.<p>
+
+<h3>Features</h3>
+
+<ul>
+<div class="thumbnail">  
+<li>Creation of multi-signature wallets</li>
+</div>
+<div class="thumbnail">  
+<li>Wallet balance and transaction listing</li>
+</div>
+<div class="thumbnail">  
+<li>Transaction creation and signing</li>
+</div>
+<div class="thumbnail">  
+<li>Transaction monitoring and notifications</li>
+</div>
+<div class="thumbnail">  
+<li>Secure user authentication</li>
+</div>
+<div class="thumbnail">  
+<li>Multi-user workflows for use in enterprise environments</li>
+</div>
+<div class="thumbnail">  
+<li>Policies and spending limits</li>
+</div>
+</ul>
+
+<h3>Two out of three</h3>
+
+<p class="pmain">Our system uses a little-acknowledged feature within the bitcoin protocol that makes it possible to better protect money in a bitcoin address. Called Pay to Script Hash (P2SH), it is a specification outlined in an update to the bitcoin protocol called BIPS 16. It enables multisignature transactions, and the benefit of those is that they enable bitcoin transactions that must be authorized by more than one public key.<p>
+
+<p class="pmain">Conventional bitcoin transactions are non-reversible, meaning that once a bitcoin transaction has happened, it is impossible to retrieve the funds. If Bob wants to send Alice some bitcoins in exchange for a product, then one of them has to make the first move, and trust that the other will follow through. Bob may send his bitcoins, only for Alice to keep the product. Conversely, Alice may send the product and Bob may never pay her.<p>
+
+<p class="pmain">But if Jen, our third party, acts as an arbiter, then she can hold the funds in escrow until both Bob and Alice confirm that they received their goods. All the parties can do this manually, but that would enable Jen to run off with the bitcoins, or for her bitcoin wallet to be compromised, leaving her responsible for Alice and Bob's outstanding transaction. This is what happened with black market web sites such as Sheep Market, whose customers saw thousands of bitcoins stolen.<p>
+
+<p class="pmain">Instead, multi-signature transactions are encoded in the protocol to make it more efficient, and secure. In BIPS 16, any number of signatures can be required to complete a transaction, but generally, people describe them as ‘two out of three’ transactions, requiring two of three digital signatures to execute.<p>
+
+<h3>A multi-signature scenario</h3>
+
+<p class="pmain">In a multi-signature scenario, Bob would send his bitcoins to a bitcoin address that he controls jointly with Alice and Jen. If Alice and Bob both agree that the goods have arrived and the transaction is complete, then Alice can confirm Bob's transaction, unlocking the money, and Jen’s involvement isn’t needed. But if either party disputes the transaction, they’ll end up trying to perform the opposite of each other: Bob will try to return the bitcoins to his own address, while, Alice will try to extract the bitcoins to her address. They can then call Jen in to investigate. She’ll make a decision, and then use her signature either to back Bob’s or Alice’s transaction. The neat thing about this is that Jen can’t send the coins to her own address, and no one else can steal the coins without stealing two of the three signatures involved.<p>
+
+<p class="pmain">In addition to stopping online scams, it’s also useful for stopping theft. Belshe, a software engineer who has worked at Netscape and Google, has developed a wallet that uses multi-signature support not for escrow purposes, but for wallet security.
+<h3>HD Safe Wallet</h3>
+
+<p class="pmain">Our wallet system uses three keys. One is stored on a trusted 3rd party server. Another is the user’s “hot” key, used in transactions, while the third is a backup key that can be held in any form by the user, say on a USB stick or a paper wallet.  Money can be sent to the wallet’s address as usual, but when the user wants to withdraw it, the “hot” key must be combined with another key in a two out of three transaction.<p>
+
+<p class="pmain">Typically, that will be the server-side key. But if the server disappears, they can still withdraw money from their wallet using their own two keys. And if their hard drive dies, they accidentally throw it in the landfill, or a hacker compromises it, then they can use the backup key with the server-side key to retrieve their coins.<p>
+
+<h3>Securing the application</h3>
+
+<p class="pmain">The tradeBTC exchange has been thoroughly tested by a white hat hacking company. Though they found a couple of minor problems, we fixed them and now the platform has been proved to be very secure. Even if a hacker broke into admin panel, his options would very limited, the admin panel is purposely designed this way, alerts are triggered via sms and email once he would try to transfer bitcoins. With fiat money is even a lot harder (i.e., impossible), as each transaction is manually verified and then approved, and transfers are digitally signed by a human.<p>
+<p class="pmain">You have to be aware though that you must keep your terminal (PC, Mac etc) clean of malwares or anything else that could impersonate you. Activating your SMS and 2FA make though almost impossible for a hacker to steal your coins. Be aware though that a malware can potentially take control over your browser and from that UNWANTED moment on, the possibilities for an attacker are broad. In order to prevent this scenario we set up a withdrawal limit (without manual approval below that) but which requires a human approval for a lerger withdrawal. This way we can reduce tha damage in the worst case scenario and minimize the loss below the manual approval limit (usually 0.3 – 0.5 BTC) but again, in order for a such bad event to occur the pottential attacker would be supposed to compromise both your PC/ MAC and phone. The system is not available to all alternate coins (a list with protected coins will be published).<p>
+    
+       
+                </div>
+             </div>                  
+          </main>
+  <%= render :partial => "welcome/footer" %>

@@ -1,0 +1,31 @@
+/* tables */
+#mails {
+  font-family:arial;
+  background-color: #CDCDCD;
+  margin:10px 0pt 15px;
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+}
+#mails thead tr th, #mails tfoot tr th {
+  background-color: #e6EEEE;
+  border: 1px solid #FFF;
+  font-size: 12px;
+  padding: 4px;
+}
+#mails thead tr .header {
+  cursor: pointer;
+}
+#mails tbody td {
+  color: #3D3D3D;
+  padding: 4px;
+  background-color: #FFF;
+  vertical-align: top;
+}
+#mails tbody tr.odd td {
+  background-color:#F0F0F6;
+}
+#mails thead tr .headerSortDown, #mails thead tr .headerSortUp {
+  background-color: #8dbdd8;
+}
+

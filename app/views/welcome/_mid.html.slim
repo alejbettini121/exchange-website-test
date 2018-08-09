@@ -1,0 +1,14 @@
+
+header.text-center  
+    section
+      - Rails.configuration.i18n.available_locales.each do |locale|
+         #getstart.row
+      - unless current_user
+        .media-but
+          a href="#{signin_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signin")        
+          a href="#{signup_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signup")
+      - else
+        .media-but
+          a href="#{market_path(current_market)}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.getstart")
+          a href="#{funds_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.funds")
+          a href="#{settings_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.settings")

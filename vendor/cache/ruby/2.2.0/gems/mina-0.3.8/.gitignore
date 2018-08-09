@@ -1,0 +1,10 @@
+doc
+test_env/deploy
+.rvmrc
+.ruby-gemset
+.ruby-version
+Gemfile.lock
+pkg/
+docs
+support/helpers.md
+support/modules.md

@@ -1,0 +1,12 @@
+- unless @one_pounds.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {pounds: @one_pounds}
+
+- unless @all_pounds.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {pounds: @all_pounds}
+
+- if @all_pounds.empty? and @one_pounds.empty?
+  h3.text-info.text-center = t('.empty')

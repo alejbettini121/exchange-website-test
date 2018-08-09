@@ -1,0 +1,74 @@
+Date: Mon, 25 Jun 2018 19:21:05 +0200
+From: system@peatio.dev
+Reply-To: support@peatio.dev
+To: bvpatidar@gmail.com
+Message-ID: <5b3124817ec8d_42d02ae007dcc79492193@tradebtc56.mail>
+Subject: [Peatio] Account Activation
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" style=" background: #EEEEEE; font:14px/20px 'Helvetica', Arial, sans-serif;">
+  <tbody>
+  <tr>
+    <td style="padding: 30px 0;"><table cellspacing="0" cellpadding="0" width="650" align="center" border="0" style="background: #FFFFFF; border-radius: 10px">
+        <tbody>
+        <tr>
+          <td>
+            <table width="100%" style="background:#3e4c5a; border-radius: 10px 10px 0 0">
+              <tbody>
+              <tr>
+                <td width="1%" style=" padding: 10px 10px"></td>
+                <td style="font-size:24px; color:#FFF; padding:10px;">PEATIO</td>
+              </tr>
+              </tbody>
+          </table></td>
+        </tr>
+        <tr>
+          <td style="border-top:none; padding:30px; color: #666 ">
+            <!--body-->
+            <table>
+              <tbody>
+              <tr>
+                <td>
+                  <p>Dear user,</p>
+
+                  <p><p>
+Thank you for signing up on Peatio, please follow this link to verify your Email:
+</p>
+
+<p>
+<a href="http://46.243.200.56:3000/activations/b59dcda2f536c28307756fb194eb3288/edit">http://46.243.200.56:3000/activations/b59dcda2f536c28307756fb194eb3288/edit</a>
+</p>
+
+<p>
+Copy and open the link in your browser if you are unable to click and visit it.
+<br/>
+The link expires in 30 minutes.
+</p>
+</p>
+
+                  <p>Thanks,<br/>The Peatio Team</p>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <!--body-->
+          </td>
+        </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td style="padding:0 30px 20px; font-size: 13px; color: #999">
+              This is an automatically generated email, please do not reply, if you have any question, please <a href="mailto:support@peatio.dev">contact us</a>.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body></html>

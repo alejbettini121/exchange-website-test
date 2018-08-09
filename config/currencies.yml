@@ -1,0 +1,181 @@
+- id: 1
+  key: euro
+  code: eur
+  symbol: "€"
+  type: fiat
+  coin: false
+  case_sensitive: true
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: 'ING BANK Belgium'
+        address: '6225 0885 000 3501'
+        password: '111111'
+        tel: '95555'
+- id: 2
+  key: satoshi
+  code: btc
+  symbol: "฿"
+  type: coin
+  coin: true
+  case_sensitive: true
+  base_factor: 100_000_000
+  api_client: BitGo
+  bitgo_test_net: on
+  bitgo_wallet_id: '5b32055337c2be2304dd82db5822a158'
+  bitgo_wallet_address: '2MxVtfWrZgiwwVaffPN8y5odP4AgX6UTpsN'
+  bitgo_wallet_passphrase: 'bhavesh20'
+  bitgo_rest_api_root: http://localhost:3080/api/v2
+  bitgo_rest_api_access_token: v2x495e5867c802baa59c9bc05a56c9363d3d686241efe420b1836eb42300c20952
+  blockchain: https://blockchain.info/tx/#{txid}
+  address_url: https://blockchain.info/address/#{address}
+  quick_withdraw_max: 0
+  assets:
+    accounts:
+      -
+        address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
+- id: 3
+  key: ether
+  code: eth
+  symbol: "฿"
+  type: coin
+  coin: true
+  case_sensitive: true
+  base_factor: 1_000_000_000_000_000_000
+  api_client: BitGo
+  bitgo_test_net: on
+  bitgo_wallet_id: '5b39d2a4f5229fc10322ad60b7194952'
+  bitgo_wallet_address: '0xcad4c4739e506a39f72efaca33160b1f5f4609ea'
+  bitgo_wallet_passphrase: 'bhavesh20'
+  bitgo_rest_api_root: http://localhost:3080/api/v2
+  bitgo_rest_api_access_token: v2x495e5867c802baa59c9bc05a56c9363d3d686241efe420b1836eb42300c20952
+  blockchain: https://etherscan.io/tx/#{txid}
+  address_url: https://etherscan.io/address/#{address}
+  precision: 4
+  quick_withdraw_max: 0
+  assets:
+    accounts:
+      -
+        address: 0x4bA2474e063Aec44e23F2Bf7Fb9e4e2878dBaB44
+- id: 4
+  key: dollar
+  code: usd
+  symbol: "$"
+  type: fiat
+  coin: false
+  case_sensitive: true
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: 'Bank of America'
+        address: '6225 0885 6022 3501'
+        password: '111111'
+        tel: '95555'
+- id: 5
+  key: pound
+  code: gbp
+  symbol: "£"
+  type: fiat
+  coin: false
+  case_sensitive: true
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: 'Bank of England'
+        address: '6225 0885 6022 3501'
+        password: '111111'
+        tel: '95555'
+- id: 6
+  key: bitcoincash
+  code: bch
+  symbol: "฿"
+  type: coin
+  coin: true
+  case_sensitive: true
+  base_factor: 100_000_000
+  api_client: BitGo
+  bitgo_test_net: on
+  bitgo_wallet_id: '5b3908f249547fa0030382bfba13a231'
+  bitgo_wallet_address: '2NAexJGige6kkaowRTHSXc4WjsSYXxJPLv4'
+  bitgo_wallet_passphrase: 'bhavesh20'
+  bitgo_rest_api_root: http://localhost:3080/api/v2
+  bitgo_rest_api_access_token: v2x495e5867c802baa59c9bc05a56c9363d3d686241efe420b1836eb42300c20952
+  quick_withdraw_max: 0
+  blockchain: https://www.blocktrail.com/BCC/address/#{address}
+  address_url: https://www.blocktrail.com/BCC/tx/#{txid}
+  assets:
+    accounts:
+      -
+        address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
+- id: 7
+  key: bitcoingold
+  code: btg
+  symbol: "฿"
+  type: coin
+  coin: true
+  case_sensitive: true
+  base_factor: 100_000_000
+  api_client: BitGo
+  bitgo_test_net: on
+  bitgo_wallet_id: '5b308ac6aef985d20319163f783f38ee'
+  bitgo_wallet_address: 'rMpFyYRAoPEHEsrmZYJKAYWH6vCGLT6JB6?dt=0'
+  bitgo_wallet_passphrase: 'bhavesh20'
+  bitgo_rest_api_root: http://localhost:3080/api/v2
+  bitgo_rest_api_access_token: v2x495e5867c802baa59c9bc05a56c9363d3d686241efe420b1836eb42300c20952
+  quick_withdraw_max: 0
+  rpc: http://btc:lkasdljalkdjalsdj@127.0.0.1:18332
+  blockchain: https://blockchain.info/tx/#{txid}
+  address_url: https://blockchain.info/address/#{address}
+  assets:
+    accounts:
+      -
+        address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
+
+- id: 8
+  key: ripple
+  code: xrp
+  symbol: "฿"
+  type: coin
+  coin: true
+  case_sensitive: true
+  base_factor: 1_000_000
+  api_client: BitGo
+  bitgo_test_net: on
+  bitgo_wallet_id: '5b308ac6aef985d20319163f783f38ee'
+  bitgo_wallet_address: 'rMpFyYRAoPEHEsrmZYJKAYWH6vCGLT6JB6?dt=0'
+  bitgo_wallet_passphrase: 'bhavesh20'
+  bitgo_rest_api_root: http://localhost:3080/api/v2
+  bitgo_rest_api_access_token: v2x495e5867c802baa59c9bc05a56c9363d3d686241efe420b1836eb42300c20952
+  quick_withdraw_max: 0
+  blockchain: https://bithomp.com/explorer/#{address}
+  address_url: https://bithomp.com/explorer/#{txid}
+  assets:
+    accounts:
+      -
+        address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
+- id: 9
+  key: litecoin
+  code: ltc
+  symbol: "L"
+  type: coin
+  coin: true
+  case_sensitive: true
+  base_factor: 100_000_000
+  api_client: BitGo
+  bitgo_test_net: on
+  bitgo_wallet_id: '5b308afb1e776495032d4a5c7e835680'
+  bitgo_wallet_address: 'Qg6ZhSYy7XLKLaFBnMNivN2JVaUNtKzohN'
+  bitgo_wallet_passphrase: 'bhavesh20'
+  bitgo_rest_api_root: http://localhost:3080/api/v2
+  bitgo_rest_api_access_token: v2x495e5867c802baa59c9bc05a56c9363d3d686241efe420b1836eb42300c20952
+  quick_withdraw_max: 0
+  blockchain: https://www.blocktrail.com/LTC/address/#{address}
+  address_url: https://www.blocktrail.com/LTC/tx/#{txid}
+  assets:
+    accounts:
+      -
+        address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
+

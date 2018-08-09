@@ -1,0 +1,193 @@
+- id: btceur
+  code: 3
+  #name: BTC/EUR      # default name
+  base_unit: btc
+  quote_unit: eur
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: eur, fixed: 2}
+  ask: {fee: 0.0016, currency: btc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: etheur
+  code: 4
+  name: ETH/EUR 
+  base_unit: eth
+  quote_unit: eur
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: eur, fixed: 2}
+  ask: {fee: 0.0016, currency: eth, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ethbtc
+  code: 5
+  name: ETH/BTC      
+  base_unit: eth
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: btc, fixed: 4}
+  ask: {fee: 0.0016, currency: eth, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: btcusd
+  code: 6
+  name: BTC/USD      # default name
+  base_unit: btc
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: usd, fixed: 2}
+  ask: {fee: 0.0016, currency: btc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ethusd
+  code: 7
+  name: ETH/USD 
+  base_unit: eth
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: usd, fixed: 2}
+  ask: {fee: 0.0016, currency: eth, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: btcgbp
+  code: 8
+  name: BTC/GBP      # default name
+  base_unit: btc
+  quote_unit: gbp
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: gbp, fixed: 2}
+  ask: {fee: 0.0016, currency: btc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ethgbp
+  code: 9
+  name: ETH/GBP
+  base_unit: eth
+  quote_unit: gbp
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: gbp, fixed: 2}
+  ask: {fee: 0.0016, currency: eth, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+
+
+- id: bcheur
+  code: 10
+  name: BCH/EUR      # default name
+  base_unit: bch
+  quote_unit: eur
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: eur, fixed: 2}
+  ask: {fee: 0.0016, currency: bch, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: btgeur
+  code: 11
+  name: BTG/EUR 
+  base_unit: btg
+  quote_unit: eur
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: eur, fixed: 2}
+  ask: {fee: 0.0016, currency: btg, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: bchusd
+  code: 12
+  name: BCH/USD      # default name
+  base_unit: bch
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: usd, fixed: 2}
+  ask: {fee: 0.0016, currency: bch, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: btgusd
+  code: 13
+  name: BTG/USD 
+  base_unit: btg
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: usd, fixed: 2}
+  ask: {fee: 0.0016, currency: btg, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: bchgbp
+  code: 14
+  name: BCH/GBP      # default name
+  base_unit: bch
+  quote_unit: gbp
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: gbp, fixed: 2}
+  ask: {fee: 0.0016, currency: bch, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: btggbp
+  code: 15
+  name: BTG/GBP
+  base_unit: btg
+  quote_unit: gbp
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: gbp, fixed: 2}
+  ask: {fee: 0.0016, currency: btg, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+
+- id: xrpeur
+  code: 16
+  name: XRP/EUR      # default name
+  base_unit: xrp
+  quote_unit: eur
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: eur, fixed: 2}
+  ask: {fee: 0.0016, currency: xrp, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ltcur
+  code: 17
+  name: LTC/EUR 
+  base_unit: ltc
+  quote_unit: eur
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: eur, fixed: 2}
+  ask: {fee: 0.0016, currency: ltc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: xrpusd
+  code: 18
+  name: XRP/USD      # default name
+  base_unit: xrp
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: usd, fixed: 2}
+  ask: {fee: 0.0016, currency: xrp, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ltcusd
+  code: 19
+  name: LTC/USD 
+  base_unit: ltc
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: usd, fixed: 2}
+  ask: {fee: 0.0016, currency: ltc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: xrpgbp
+  code: 20
+  name: XRP/GBP      # default name
+  base_unit: xrp
+  quote_unit: gbp
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: gbp, fixed: 2}
+  ask: {fee: 0.0016, currency: xrp, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ltcgbp
+  code: 21
+  name: LTC/GBP
+  base_unit: ltc
+  quote_unit: gbp
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.0016, currency: gbp, fixed: 2}
+  ask: {fee: 0.0016, currency: ltc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true

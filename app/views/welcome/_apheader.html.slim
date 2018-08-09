@@ -1,0 +1,64 @@
+﻿header.site-header
+  .top
+    .container
+      .row
+        .col-sm-6
+          p
+            | A better crypto exchange at your fingertips
+        .col-sm-6
+          ul.list-inline.pull-right
+            li
+              a[href="#"]
+                i.fa.fa-facebook
+            li
+              a[href="#"]
+                i.fa.fa-twitter
+            li
+              a[href="#"]
+                i.fa.fa-linkedin
+  nav.navbar.navbar-default
+    .container
+      button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-navbar-collapse"]
+        span.sr-only
+          | Toggle Navigation
+        i.fa.fa-bars
+      = link_to '/', class: "navbar-brand" do
+        = image_tag("logo.png", class: "navbar-brand")
+      #bs-navbar-collapse.collapse.navbar-collapse
+        ul.nav.navbar-nav.main-navbar-nav
+          li
+            a[href="/" title=""]
+              | HOME
+          li.dropdown
+            a.dropdown-toggle[href="#" title="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"]
+              | MEMBERS 
+              span.caret
+            ul.dropdown-menu             
+                header.text-center  
+                    section
+                      - Rails.configuration.i18n.available_locales.each do |locale|
+                         #getstart.row
+                      - unless current_user 
+                        li
+                          a href="#{signin_path}" = t("header.signin") 
+                        li
+                          a href="#{signup_path}" = t("header.signup")
+                      - else  
+                        li
+                          a href="#{market_path(current_market)}" = t("header.getstart")
+                        li
+                          a href="#{funds_path}" = t("header.funds")
+                        li
+                          a href="#{settings_path}" = t("header.settings")
+          li
+            a[href="/security" title=""]
+              | SECURITY
+          li
+            a[href="/tos" title=""]
+              | TOS
+          li
+            a[href="/privacy" title=""]
+              | PRIVACY
+          li
+            a[href="/quand" title=""]
+              | Q&A

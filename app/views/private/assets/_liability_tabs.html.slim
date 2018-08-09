@@ -1,0 +1,39 @@
+.tabbable
+  ul.nav.nav-tabs
+    li.active: a.btc-proof href="#btc-proof" data-toggle="tab" == t('.verify-btc')
+    li:        a.eur-proof href="#eur-proof" data-toggle="tab" == t('.verify-eur')
+    li:        a.usd-proof href="#usd-proof" data-toggle="tab" == t('.verify-usd')
+    li:        a.gbp-proof href="#gbp-proof" data-toggle="tab" == t('.verify-gbp')
+
+  .tab-content
+    #btc-proof.tab-pane.active: .trade-wrapper
+      .assets
+        span.title = t('.btc-assets-total')
+        span.currency
+          == t("currency.icon.btc")
+          = @btc_proof.sum
+      = render 'liability_data', account: @btc_account, proof: @btc_proof
+
+    #eur-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.eur-assets-total')
+        span.currency
+          == t("currency.icon.eur")
+          = @eur_proof.sum
+      = render 'liability_data', account: @eur_account, proof: @eur_proof
+
+    #usd-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.usd-assets-total')
+        span.currency
+          == t("currency.icon.usd")
+          = @usd_proof.sum
+      = render 'liability_data', account: @usd_account, proof: @usd_proof
+
+    #gbp-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.gbp-assets-total')
+        span.currency
+          == t("currency.icon.gbp")
+          = @gbp_proof.sum
+      = render 'liability_data', account: @gbp_account, proof: @gbp_proof

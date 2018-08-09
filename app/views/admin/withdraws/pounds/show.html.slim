@@ -1,0 +1,38 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @pound.sn)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @pound, :id
+          = item_for @pound, :created_at
+          = item_for @pound, :aasm_state_text
+          hr.split
+          = item_for @pound.member, :name do
+            span.fa.fa-copy data-clipboard-text='#{@pound.member.name}' = @pound.member.name
+          = item_for @pound, :fund_extra do
+            span.fa.fa-copy data-clipboard-text='#{pound_code_to_name @pound.fund_extra}' = pound_code_to_name @pound.fund_extra
+          = item_for @pound, :fund_uid do
+            span.fa.fa-copy data-clipboard-text='#{@pound.fund_uid}' = @pound.fund_uid
+          = item_for @pound, :amount do
+            span.fa.fa-copy data-clipboard-text='#{@pound.amount}' = @pound.amount
+          hr.split
+          hr.split
+          = item_for @pound, :remark do
+            span.fa.fa-copy data-clipboard-text='#{@pound.remark}' = @pound.remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @pound.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @pound]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @pound.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @pound]), class: 'btn btn-primary', method: 'PATCH'
+            - if @pound.may_succeed?
+              li
+                = link_to t('.succeed'), url_for([:admin, @pound]), class: 'btn btn-success', method: 'PATCH', confirm: t('.succeed_confirm')
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @pound.member}
+    = render partial: 'shared/admin/account', locals: {account: @pound.account}

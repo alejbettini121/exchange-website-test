@@ -1,0 +1,73 @@
+﻿= render :partial => "welcome/apheader"
+main.site-main
+  section.hero_area
+    .hero_content
+      .container
+        .row
+          .col-sm-12
+            h1
+              | TradeBTC - FIAT money
+            h2
+              | More than a trading platform. Your CRYPTO Free Storage. Secured With Multi-Signature Keys
+  section.boxes_area
+    .container
+      .row
+        .col-sm-4
+          .box
+            h3
+              | MULTI-SIGNATURE-KEYS
+            p
+              | BitGo Safe uses a little-acknowledged feature within the bitcoin protocol that makes it possible to better protect money in a bitcoin address. Called Pay to Script Hash (P2SH), it is a specification outlined in an update to the bitcoin protocol called BIPS 16. It enables multisignature transactions, and the benefit of those is that they enable bitcoin transactions that must be authorized by more than one public key. 
+            i.fa.fa-key
+        .col-sm-4
+          .box
+            h3
+              | LEGAL IN EUROPE
+            p
+              | BELGIUM has an excellent reputation regarding customer protection and business transparency. It is also noteworhty that our Bank has also an excelent reputation: ING Bank. Working with exchanges that have bank accounts offshore might be not the best option for you. Having your fiat money into a trustful bank it is an excellent choice!
+            i.fa.fa-briefcase
+        .col-sm-4
+          .box
+            h3
+              | SECURITY
+            p
+              | We put security on the top of our list priority. Multisignature has several benifits: even if the database would be cracked, the keys couldn't be used. Even if the platform would be shut down, users can recover theier bictoins using BitGo second key. There is also a manual approval of each bitcoin withdrawal that exceeds a limit we set up. The platform itself has been audited by a company specialized in white hacking.
+            i.fa.fa-lock
+  section.services
+    h2.section-title
+      | OTHER FEATURES
+    p.desc
+      | Some other features but not all of them
+    .container
+      .row
+        .col-md-4.col-sm-6.col-xs-12
+          .media
+            .media-left.media-middle
+              i.fa.fa-lock
+            .media-body
+              h4.media-heading
+                | MULTILAYERED PROTECTION
+              p
+                | The 2 of 3 keys multi-signature encrypt private keys within the Database. The second key is also backed up by a third party data center in case of a disaster recovery situation.
+        .col-md-4.col-sm-6.col-xs-12
+          .media
+            .media-left.media-middle
+              i.fa.fa-server
+            .media-body
+              h4.media-heading
+                | CLONED VIRTUAL MACHINE READY
+              p
+                | A backup VM clone is always ready to replace the main container in case anything went wrong. DB backup on regular basis
+        .col-md-4.col-sm-6.col-xs-12
+          .media
+            .media-left.media-middle
+              i.fa.fa-money
+            .media-body
+              h4.media-heading
+                | SMALL FEES
+              p
+                | Asbtc you can read on the Terms of Service page, we are taking very small fees
+      = render :partial => "welcome/mid"
+  = render :partial => "welcome/prefooter"
+= render "welcome/footer"
+script#cookieinfo[type="text/javascript" src="/assets/cookieinfo.min.js" data-bg="#645862" data-fg="#FFFFFF" data-link="#F1D600" data-cookie="CookieInfoScript" data-text-align="left" data-close-text="Got it!"]

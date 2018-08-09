@@ -1,0 +1,68 @@
+Date: Tue, 13 Mar 2018 01:27:25 +0100
+From: system@peatio.dev
+Reply-To: support@peatio.dev
+To: admin@peatio.dev
+Message-ID: <5aa71aedb2880_7f242acf81a2d2a01397d@tradebtc56.mail>
+Subject: [Peatio] Your withdraw state update
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" style=" background: #EEEEEE; font:14px/20px 'Helvetica', Arial, sans-serif;">
+  <tbody>
+  <tr>
+    <td style="padding: 30px 0;"><table cellspacing="0" cellpadding="0" width="650" align="center" border="0" style="background: #FFFFFF; border-radius: 10px">
+        <tbody>
+        <tr>
+          <td>
+            <table width="100%" style="background:#3e4c5a; border-radius: 10px 10px 0 0">
+              <tbody>
+              <tr>
+                <td width="1%" style=" padding: 10px 10px"></td>
+                <td style="font-size:24px; color:#FFF; padding:10px;">PEATIO</td>
+              </tr>
+              </tbody>
+          </table></td>
+        </tr>
+        <tr>
+          <td style="border-top:none; padding:30px; color: #666 ">
+            <!--body-->
+            <table>
+              <tbody>
+              <tr>
+                <td>
+                  <p>Dear user,</p>
+
+                  <p><p>
+The request of your CNY withdrawal has been successfully submitted, We will process it as soon as possible. Please be patient with us. Contact us if you have any questions.
+</p>
+
+<p>
+If it's not you, please <a href='mailto:support@peatio.dev'>contact us</a> ASAP.
+</p>
+</p>
+
+                  <p>Thanks,<br/>The Peatio Team</p>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <!--body-->
+          </td>
+        </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td style="padding:0 30px 20px; font-size: 13px; color: #999">
+              This is an automatically generated email, please do not reply, if you have any question, please <a href="mailto:support@peatio.dev">contact us</a>.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body></html>
