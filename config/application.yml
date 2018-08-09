@@ -3,7 +3,7 @@ defaults: &defaults
   # sites hosts
   # session expire seconds
   # admin role account
-  URL_HOST: 46.243.200.56:3000
+  URL_HOST: 81.196.165.232:3000
   URL_SCHEMA: http
   SESSION_EXPIRE: 60
   ADMIN: 'admin@peatio.dev,olicelea@yahoo.com,admin@example.com'
