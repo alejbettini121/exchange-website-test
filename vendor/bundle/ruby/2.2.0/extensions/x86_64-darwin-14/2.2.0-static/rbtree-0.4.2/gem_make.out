@@ -1,0 +1,18 @@
+/Users/administrator/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20180814-21399-hrn6uo.rb extconf.rb
+checking for rb_exec_recursive() in ruby.h... yes
+checking for rb_exec_recursive_paired() in ruby.h... yes
+checking for rb_proc_lambda_p() in ruby.h... yes
+checking for rb_ary_resize() in ruby.h... yes
+checking for rb_obj_hide() in ruby.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling dict.c
+compiling rbtree.c
+linking shared-object rbtree.bundle
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 rbtree.bundle ./.gem.20180814-21399-ueb3o6

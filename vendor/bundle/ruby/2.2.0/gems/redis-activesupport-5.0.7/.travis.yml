@@ -1,0 +1,30 @@
+language: ruby
+script: 'bundle exec rake'
+rvm:
+  - 2.0
+  - 2.1
+  - 2.2
+  - 2.3
+  - 2.4
+  - ruby-head
+  - jruby-head
+services:
+  - redis-server
+matrix:
+  allow_failures:
+    - rvm: jruby-head
+    - rvm: ruby-head
+    - rvm: 2.0
+      gemfile: gemfiles/Gemfile.activesupport-5.x
+    - rvm: 2.1
+      gemfile: gemfiles/Gemfile.activesupport-5.x
+notifications:
+  webhooks: https://www.travisbuddy.com/
+  on_success: never
+# Put this in your .travis.yml
+gemfile:
+  - gemfiles/activesupport_3.gemfile
+  - gemfiles/activesupport_4.gemfile
+  - gemfiles/activesupport_50.gemfile
+  - gemfiles/activesupport_51.gemfile
+  - gemfiles/activesupport_52.gemfile

@@ -1,0 +1,30 @@
+/Users/administrator/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20180814-21399-jkkdh6.rb extconf.rb --with-mysql-config=/usr/local/mysql/bin/mysql_config
+checking for ruby/thread.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_wait_for_single_fd()... yes
+checking for rb_hash_dup()... yes
+checking for rb_intern3()... yes
+-----
+Using mysql_config at /usr/local/mysql/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for mysqld_error.h... yes
+-----
+Setting rpath to /usr/local/mysql/lib
+-----
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling client.c
+compiling infile.c
+compiling mysql2_ext.c
+compiling result.c
+linking shared-object mysql2/mysql2.bundle
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 mysql2.bundle ./.gem.20180814-21399-16uzpio/mysql2

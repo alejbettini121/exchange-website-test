@@ -1,0 +1,65 @@
+have_func: checking for rb_enc_raise() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/haven/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/administrator/.rvm/rubies/ruby-2.2.2/lib -L. -L/Users/haven/.sm/pkg/active/lib -fPIC -Bstatic -lz -fstack-protector -L/usr/local/lib   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -o conftest -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/haven/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/administrator/.rvm/rubies/ruby-2.2.2/lib -L. -L/Users/haven/.sm/pkg/active/lib -fPIC -Bstatic -lz -fstack-protector -L/usr/local/lib   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:15:57: error: use of undeclared identifier 'rb_enc_raise'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_raise; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_raise; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/administrator/.rvm/rubies/ruby-2.2.2/include/ruby-2.2.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/haven/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/administrator/.rvm/rubies/ruby-2.2.2/lib -L. -L/Users/haven/.sm/pkg/active/lib -fPIC -Bstatic -lz -fstack-protector -L/usr/local/lib   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:15:15: warning: implicit declaration of function 'rb_enc_raise' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { rb_enc_raise(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { rb_enc_raise(); return 0; }
+/* end */
+
+--------------------
+
