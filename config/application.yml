@@ -14,9 +14,9 @@ defaults: &defaults
   # below settings only in production env
   # system notify mail settings
   # --------------------------------------------------------------
-  SMTP_PORT: YOUR_SMTP_PORT
-  SMTP_DOMAIN: YOUR_SMTP_DOMAIN
-  SMTP_ADDRESS: YOUR_SMTP_ADDRESS
+  SMTP_PORT: smtp.gmail.com
+  SMTP_DOMAIN: 587
+  SMTP_ADDRESS: gmail.com
   SMTP_USERNAME: YOUR_SMTP_USERNAME
   SMTP_PASSWORD: YOUR_SMTP_PASSWORD
   SMTP_AUTHENTICATION: plain # could be plain, login or cram_md5
